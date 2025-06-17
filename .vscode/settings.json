@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "concepts": "cpp",
+        "filesystem": "cpp",
+        "functional": "cpp",
+        "memory": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "queue": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp",
+        "vector": "cpp",
+        "unordered_set": "cpp",
+        "ostream": "cpp",
+        "utility": "cpp",
+        "array": "cpp",
+        "chrono": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "forward_list": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "valarray": "cpp"
+    }
+}
