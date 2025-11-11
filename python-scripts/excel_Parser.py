@@ -52,7 +52,7 @@ def parse_excel(excel_file: str) -> dict:
 
     return {
         "numberOfDays": -1,
-        "numberOfSlots": -1,
+        "numberOfSlots": 2,
         "numberOfCourses": len(courses),
         "numberOfEdges": len(graphEdges),
         "edges": list(graphEdges),

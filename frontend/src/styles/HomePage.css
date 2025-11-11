@@ -2,8 +2,10 @@
 .home-container {
     background-color: #ffffff;
     color: #000000;
-    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header with logo */
@@ -14,6 +16,7 @@
     align-items: center;
     padding: 10px 30px;
     border-bottom: 2px solid #cce0e0;
+    flex-shrink: 0;
 }
 
 .logo-container {
@@ -28,18 +31,19 @@
 /* Body content */
 .body {
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px;
     background-image: url('/Lnm2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 80px);
+    position: relative;
+    font-size: 20px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    font-size: 20px;
+    overflow: auto;
 }
 
 /* Optional overlay for readability */
@@ -61,7 +65,6 @@
 /* Dropzone */
 .dropzone {
     border: 2px dashed #4aa6b5;
-    /* teal-blue */
     padding: 30px;
     margin: 20px auto;
     width: 60%;
@@ -160,6 +163,7 @@ select:hover {
     font-weight: bold;
     font-size: 16px;
     border-top: 2px solid #3a8e9a;
+    flex-shrink: 0;
 }
 
 .input-field {
@@ -194,12 +198,10 @@ select:hover {
         transform: scale(1);
         opacity: 0.8;
     }
-
     50% {
         transform: scale(1.1);
         opacity: 1;
     }
-
     100% {
         transform: scale(1);
         opacity: 0.8;
@@ -209,9 +211,9 @@ select:hover {
 .homepage-title {
     font-size: 3rem;
     font-weight: 800;
+    margin-top: 100px; /* <-- ADDED THIS LINE */
     margin-bottom: 30px;
     color: #005f73;
-    /* calming blue-green tone */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, #cce3dc, #e0fbfc);
     padding: 12px 25px;
